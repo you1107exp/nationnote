@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nationnote</title>
+    <title>NationNote</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,17 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="header-bar row">
+        <h1 class="grid"><a href="/">NationNote</a></h1>
+        <div class="user-nav grid">
+          <a class="new-post" href="/posts/new">投稿する</a>
+        </div>
+      </div>
+    </header>
     <%= yield %>
+    <footer>
+      <p>Copyright(C) NationNote ALL RIGHTS RESERVED.</p>
+    </footer>
   </body>
 </html>

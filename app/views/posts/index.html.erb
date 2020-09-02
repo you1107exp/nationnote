@@ -1,0 +1,9 @@
+<div class="contents row">
+  <% @posts.each do |post| %>
+    <div class="content-post">
+      <p><%= post.title %></p>
+      <span class="country">in <%= post.country %></span>
+      <span class="nickname">by <%= post.nickname %></span>
+    </div>
+  <% end %>
+</div>
