@@ -1,0 +1,45 @@
+.main {
+  width: 70vw;
+  margin: 0 0 0 10rem;
+}
+
+.content-post {
+  border-top: 1px solid #f0f0f0;
+  position: relative;
+  overflow: scroll;
+}
+
+.head-post {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.foot-post {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.country {
+  margin-left: 2rem;
+}
+
+.pull-down {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+.btn, a.btn {
+  color: #fff;
+  background-color: #00ffff;
+}
+
+.btn:hover, a.btn:hover {
+  color: #fff;
+  background-color: #66ffff;
+}

@@ -1,9 +1,10 @@
-<div class="contents row">
+<div class="main row">
   <% @posts.each do |post| %>
     <div class="content-post">
-      <p><%= post.title %></p>
-      <span class="country">in <%= post.country %></span>
-      <span class="nickname">by <%= post.nickname %></span>
+      <p class="head-post"><%= post.title %></p>
+      <span class="foot-post country">in <%= post.country %></span>
+      <span class="foot-post nickname">by <%= post.nickname %></span>
+      <i class="fas fa-angle-down fa-lg pull-down"></i>
     </div>
   <% end %>
 </div>
