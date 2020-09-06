@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nationnote</title>
+    <title>NationNote</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <script src="https://kit.fontawesome.com/050480eb55.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header class="header">
+      <div class="header-bar">
+        <div class="header-logo">
+          <%= link_to image_tag("nationnote-logo.png", class:"nationnote-icon"), "/" %>
+        </div>
+        <div class="user-nav">
+          <a class="btn user-btn" href="#">user</a>
+          <a class="btn new-post-btn" href="/posts/new">投稿する</a>
+        </div>
+      </div>
+    </header>
     <%= yield %>
+    <div class="space">
+    </div>
+    <footer class="footer">
+      <p>Copyright(C) NationNote ALL RIGHTS RESERVED.</p>
+    </footer>
   </body>
 </html>
