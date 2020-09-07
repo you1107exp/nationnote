@@ -5,7 +5,6 @@ class CreatePosts < ActiveRecord::Migration[6.0]
       t.integer :country_id, null: false
       t.string :content, null: false
       t.string :ref_url
-      t.string :ref_img
       t.string :nickname, null: false
       t.timestamps
     end
