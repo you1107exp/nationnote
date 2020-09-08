@@ -1,0 +1,66 @@
+<div class="container">
+  <h2 class="create-new-post">編集する</h2>
+  <%= form_with model: @post, local: true do |f| %>
+    <%# エラーメッセージを表示 %>
+    <%#= render 'shared/error_messages', model: f.object %>
+    <%# エラーメッセージを表示 %>
+    <div class="post-container">
+      <%# タイトル %>
+      <div class="post-title">
+        <div class="weight-bold-text">
+          タイトル
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :title, class:"post-text", id:"post-title-text", placeholder:"タイトル（必須 40文字まで）" %>
+      </div>
+      <%# タイトル %>
+      <%# 国名選択 %>
+      <div class="post-country">
+        <div class="weight-bold-text">
+          投稿内容に関する国名
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:country_id, Country.all, :id, :name, {}, {class:"select-box", id:"post-country-select"}) %>
+      </div>
+      <%# 国名選択 %>
+      <%# 本文 %>
+      <div class="post-content">
+        <div class="weight-bold-text">
+          本文
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :content, class:"post-text", id:"post-content-text", placeholder:"本文を入力（必須 1000文字まで）", rows:"10" %>
+      </div>
+      <%# 本文 %>
+      <%# 参考サイト名とURL %>
+      <div class="post-ref-url">
+        <div class="weight-bold-text">
+          参考サイト名とURL
+          <span class="optional">任意</span>
+        </div>
+        <%= f.text_area :ref_url, class:"post-text", id:"post-ref-url-text", placeholder:"参考サイト名とURLを入力", rows:"4" %>
+      </div>
+      <%# 参考サイト名とURL %>
+      <%# 参考画像 %>
+      <div class="post-ref-img">
+        <div class="weight-bold-text">
+          参考画像
+          <span class="optional">任意</span>
+        </div>
+        <div class="click-upload">
+          <p>
+            クリックしてファイルをアップロード
+          </p>
+          <%= f.file_field :ref_img, id:"item-image" %>
+        </div>
+      </div>
+      <%# 参考画像 %>
+    </div>
+    <%# 投稿ボタン %>
+    <div class="post-submit">
+      <%= f.submit "更新する", class:"post-btn" %>
+      <%= link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+    <%# 投稿ボタン %>
+  <% end %>
+</div>
