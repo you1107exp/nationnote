@@ -44,3 +44,49 @@
   color: #fff;
   background-color: #66ffff;
 }
+
+.pull-down-list {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 0.5;
+  display: inline-block;
+  padding: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  background-color: #00ecff;
+  border-radius: 0.5rem;
+}
+
+.pull-down-list:hover {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 0.5;
+  display: inline-block;
+  padding: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  background-color: #66ffff;
+  border-radius: 0.5rem;
+}
