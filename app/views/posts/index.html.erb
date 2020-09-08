@@ -5,7 +5,9 @@
       <span class="foot-post country">in <%= post.country.name %></span>
       <%# <span class="foot-post nickname">by <%= post.nickname %>
       <%# </span> %>
-      <i class="fas fa-angle-down fa-lg pull-down"></i>
+      <i class="fas fa-angle-down fa-lg pull-down">
+        <%= link_to '削除', post_path(post.id), method: :delete, class:"pull-down-list" %>
+      </i>
     </div>
   <% end %>
 </div>
