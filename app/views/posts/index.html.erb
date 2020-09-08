@@ -1,7 +1,7 @@
 <div class="main row">
   <% @posts.each do |post| %>
     <div class="content-post">
-      <p class="head-post"><%= link_to post.title, post_path(post.id), method: :get %></p>
+      <p class="head-post"><%= link_to post.title, post_path(post.id), method: :get, class:"content-title" %></p>
       <span class="foot-post country">in <%= post.country.name %></span>
       <%# <span class="foot-post nickname">by <%= post.nickname %>
       <%# </span> %>
