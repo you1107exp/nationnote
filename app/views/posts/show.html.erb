@@ -1,0 +1,22 @@
+<div class="container">
+  <%# タイトルと国名 %>
+  <div class="show-top">
+    <h2 class="show-title"><%= @post.title %></h2>
+    <span class="show-country">in <%= @post.country.name %></span>
+  </div>
+  <%# タイトルと国名 %>
+  <div class="show-container">
+    <div>
+      <%= image_tag @post.ref_img.variant(resize:'500x500'), class:"show-ref-img" if @post.ref_img.attached? %>
+    </div>
+    <div class="show-content">
+      <%= @post.content %>
+    </div>
+    <div class="show-ref-url">
+      <%= @post.ref_url %>
+    </div>
+  </div>
+  <div class="back-to-top">
+    <a class="btn" href="/">トップページへ戻る</a>
+  </div>
+</div>
