@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2020_09_09_030559) do
     t.integer "country_id", null: false
     t.string "content", null: false
     t.string "ref_url"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

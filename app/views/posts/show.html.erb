@@ -2,7 +2,12 @@
   <%# タイトルと国名 %>
   <div class="show-top">
     <h2 class="show-title"><%= @post.title %></h2>
-    <span class="show-country">in <%= @post.country.name %></span>
+    <span class="show-sub-wrap">in <%= @post.country.name %></span>
+    <span class="show-sub-wrap">
+      <a class="show-sub" href="/users/<%= @post.user.id %>">
+        <span>by <%= @post.user.nickname %></span>
+      </a>
+    </span>
   </div>
   <%# タイトルと国名 %>
   <div class="show-container">
