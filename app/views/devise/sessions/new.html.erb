@@ -1,0 +1,28 @@
+<div class="container">
+  <h2 class="log-in-title">ログイン</h2>
+  <%= form_with model: resource, url: user_session_path, local: true do |f| %>
+    <div class="post-container">
+      <%# メールアドレス %>
+      <div class="log-in-email">
+        <div class="weight-bold-text">
+          メールアドレス
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :email, class:"post-text", id:"email", placeholder:"PCまたは携帯" %>
+      </div>
+      <%# メールアドレス %>
+      <%# パスワード %>
+      <div class="log-in-password">
+        <div class="weight-bold-text">
+          パスワード
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.password_field :password, class:"post-text", id:"password", placeholder:"", autocomplete:"off" %>
+      </div>
+      <%# パスワード %>
+    </div>
+    <div class="post-submit">
+      <%= f.submit "ログイン", class:"post-btn" %>
+    </div>
+  <% end %>
+</div>
