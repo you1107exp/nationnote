@@ -15,10 +15,17 @@
         <div class="header-logo">
           <%= link_to image_tag("nationnote-logo.png", class:"nationnote-icon"), "/" %>
         </div>
-        <div class="user-nav">
-          <a class="btn user-btn" href="#">user</a>
-          <a class="btn new-post-btn" href="/posts/new">投稿する</a>
-        </div>
+        <% if user_signed_in? %>
+          <div class="user-nav">
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"btn user-btn" %>
+            <%= link_to "投稿する", new_post_path, class:"btn new-post-btn" %>
+          </div>
+        <% else %>
+          <div class="user-nav">
+            <%= link_to "ログイン", new_user_session_path, class:"btn user-btn" %>
+            <%= link_to "新規登録", new_user_registration_path, class:"btn user-btn" %>
+          </div>
+        <% end %>
       </div>
     </header>
     <%= yield %>
