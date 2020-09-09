@@ -7,7 +7,7 @@
   min-width: 50rem;
 }
 
-.create-new-post, .back-to-top, .show-title, .log-in-title {
+.create-new-post, .back-to-top, .show-title, .log-in-title, .mypage-title {
   font-size: 2.2rem;
   font-weight: bold;
   text-align: center;
