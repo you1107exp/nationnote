@@ -6,10 +6,12 @@
       <a class="show-sub" href="/users/<%= post.user.id %>">
         <span class="foot-post nickname">by <%= post.user.nickname %></span>
       </a>
-      <i class="fas fa-angle-down fa-lg pull-down">
-        <%= link_to '編集', edit_post_path(post.id), method: :get, class:"pull-down-list" %>
-        <%= link_to '削除', post_path(post.id), method: :delete, class:"pull-down-list" %>
-      </i>
+      <% if user_signed_in? && current_user.id == post.user_id %>
+        <li class="pull-down">
+          <%= link_to '編集', edit_post_path(post.id), method: :get, class:"pull-down-list" %>
+          <%= link_to '削除', post_path(post.id), method: :delete, class:"pull-down-list" %>
+        </li>
+      <% end %>
     </div>
   <% end %>
 </div>

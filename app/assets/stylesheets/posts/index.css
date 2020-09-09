@@ -38,6 +38,7 @@
   position: absolute;
   top: 1rem;
   right: 2rem;
+  list-style: none;
 }
 
 .btn, a.btn {
