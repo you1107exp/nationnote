@@ -8,6 +8,14 @@
         <span>by <%= @post.user.nickname %></span>
       </a>
     </span>
+    <% if user_signed_in? && current_user.id == @post.user_id %>
+      <ul class="position-relative">
+        <li class="pull-down">
+          <%= link_to '編集', edit_post_path(@post.id), method: :get, class:"pull-down-list" %>
+          <%= link_to '削除', post_path(@post.id), method: :delete, class:"pull-down-list" %>
+        </li>
+      </ul>
+    <% end %>
   </div>
   <%# タイトルと国名 %>
   <div class="show-container">

@@ -4,10 +4,10 @@
     <div class="content-post">
       <p class="head-post"><%= link_to post.title, post_path(post.id), method: :get, class:"content-title" %></p>
       <span class="foot-post country">in <%= post.country.name %></span>
-      <i class="fas fa-angle-down fa-lg pull-down">
+      <li class="pull-down">
         <%= link_to '編集', edit_post_path(post.id), method: :get, class:"pull-down-list" %>
         <%= link_to '削除', post_path(post.id), method: :delete, class:"pull-down-list" %>
-      </i>
+      </li>
     </div>
   <% end %>
 </div>

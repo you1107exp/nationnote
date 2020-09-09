@@ -23,3 +23,8 @@
   line-height: 1.9;
   font-size: 1.6rem;
 }
+
+.position-relative {
+  width: 12vw;
+  position: relative;
+}
