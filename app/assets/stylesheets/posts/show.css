@@ -4,11 +4,16 @@
   justify-content: center;
 }
 
-.show-country {
+.show-sub-wrap {
   font-size: 1.4rem;
   margin-left: 2rem;
   padding-top: 2.5rem;
   cursor: pointer;
+}
+
+.show-sub {
+  color: #000;
+  text-decoration: none;
 }
 
 .show-container {
