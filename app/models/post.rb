@@ -1,7 +1,7 @@
 class Post < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :country
-  # belongs_to :user
+  belongs_to :user
   has_one_attached :ref_img
 
   with_options presence: true do
