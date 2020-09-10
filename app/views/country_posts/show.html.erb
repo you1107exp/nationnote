@@ -1,5 +1,5 @@
 <div class="main row">
-  <h2 class="mypage-title"><%= @nickname %>さんの投稿一覧</h2>
+  <h2 class="mypage-title"><%= @country.name %>の投稿一覧</h2>
   <% @posts.each do |post| %>
     <div class="content-post">
       <p class="head-post"><%= link_to post.title, post_path(post.id), method: :get, class:"content-title" %></p>

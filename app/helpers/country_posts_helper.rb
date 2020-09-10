@@ -1,0 +1,2 @@
+module CountryPostsHelper
+end
