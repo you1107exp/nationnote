@@ -1,0 +1,2 @@
+class CountryPost < ApplicationRecord
+end
