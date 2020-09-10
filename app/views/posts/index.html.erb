@@ -2,7 +2,9 @@
   <% @posts.each do |post| %>
     <div class="content-post">
       <p class="head-post"><%= link_to post.title, post_path(post.id), method: :get, class:"content-title" %></p>
-      <span class="foot-post country">in <%= post.country.name %></span>
+      <a class="show-sub" href="/country_posts/<%= post.country.id %>">
+        <span class="foot-post country margin">in <%= post.country.name %></span>
+      </a>
       <a class="show-sub" href="/users/<%= post.user.id %>">
         <span class="foot-post nickname">by <%= post.user.nickname %></span>
       </a>
