@@ -28,3 +28,8 @@
   width: 12vw;
   position: relative;
 }
+
+.show-container-element {
+  padding-bottom: 2vh;
+  text-align: left;
+}
