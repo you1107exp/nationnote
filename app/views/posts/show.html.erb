@@ -26,11 +26,11 @@
     <div>
       <%= image_tag @post.ref_img.variant(resize:'500x500'), class:"show-ref-img" if @post.ref_img.attached? %>
     </div>
-    <div class="show-content">
-      <%= @post.content %>
+    <div class="show-container-element">
+      <%= raw Rinku.auto_link(safe_join(@post.content.split("\n"),tag(:br))) %>
     </div>
-    <div class="show-ref-url">
-      <%= @post.ref_url %>
+    <div class="show-container-element">
+      <%= raw Rinku.auto_link(safe_join(@post.ref_url.split("\n"),tag(:br))) %>
     </div>
   </div>
   <div class="back-to-top">
