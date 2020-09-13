@@ -51,7 +51,8 @@
           <p>
             クリックしてファイルをアップロード
           </p>
-          <%= f.file_field :ref_img, id:"item-image" %>
+          <%= f.file_field :ref_img, id:"message-image" %>
+          <%= image_tag @post.ref_img, id:"image" if @post.ref_img.present? %>
         </div>
       </div>
       <%# 参考画像 %>
