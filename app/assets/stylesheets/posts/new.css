@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   min-width: 50rem;
+  z-index: 1;
 }
 
 .create-new-post, .back-to-top, .show-title, .log-in-title, .mypage-title {
