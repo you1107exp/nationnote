@@ -10,8 +10,8 @@
       </a>
       <% if user_signed_in? && current_user.id == post.user_id %>
         <li class="pull-down">
-          <%= link_to '編集', edit_post_path(post.id), method: :get, class:"pull-down-list" %>
-          <%= link_to '削除', post_path(post.id), method: :delete, id:"delete-btn", class:"pull-down-list" %>
+          <%= link_to '編集', edit_post_path(post.id), method: :get, class:"pull-down-list list-none" %>
+          <%= link_to '削除', post_path(post.id), method: :delete, id:"delete-btn", class:"pull-down-list list-none" %>
         </li>
       <% end %>
     </div>

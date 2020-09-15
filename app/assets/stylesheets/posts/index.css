@@ -2,7 +2,7 @@
   width: 80vw;
   margin: 0 0 0 10rem;
   padding-bottom: 5vh;
-  z-index: 2;
+  z-index: 1;
 }
 
 .content-post {
@@ -96,4 +96,220 @@
   color: #fff;
   background-color: #66ffff;
   border-radius: 0.5rem;
+}
+
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+  .main {
+    width: 90%;
+    margin: 0 0 0 5rem;
+    padding-bottom: 5vh;
+    z-index: 1;
+  }
+  
+  .content-post {
+    border-top: 1px solid #f0f0f0;
+    position: relative;
+    overflow: scroll;
+  }
+  
+  .head-post {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+  
+  .content-title {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .foot-post {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  
+  .margin {
+    margin-left: 2rem;
+  }
+  
+  .pull-down {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    list-style: none;
+  }
+  
+  .btn, a.btn {
+    color: #fff;
+    background-color: #00ffff;
+  }
+  
+  .btn:hover, a.btn:hover {
+    color: #fff;
+    background-color: #66ffff;
+  }
+  
+  .pull-down-list {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 0.5;
+    display: inline-block;
+    padding: 1rem;
+    margin: 0 0 1rem 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    background-color: #00ecff;
+    border-radius: 0.5rem;
+  }
+  
+  .pull-down-list:hover {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 0.5;
+    display: inline-block;
+    padding: 1rem;
+    margin: 0 0 1rem 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    background-color: #66ffff;
+    border-radius: 0.5rem;
+  }
+  
+  .list-none {
+    display: none;
+  }
+
+}
+
+/* スマートフォン表示時 */
+@media (max-width: 599px) {
+  .main {
+    width: 90%;
+    margin: 0 2.5rem;
+    padding-bottom: 5vh;
+    z-index: 1;
+  }
+  
+  .content-post {
+    border-top: 1px solid #f0f0f0;
+    position: relative;
+    overflow: scroll;
+  }
+  
+  .head-post {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+  
+  .content-title {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .foot-post {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  
+  .margin {
+    margin-left: 1rem;
+  }
+  
+  .pull-down {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    list-style: none;
+  }
+  
+  .btn, a.btn {
+    color: #fff;
+    background-color: #00ffff;
+  }
+  
+  .btn:hover, a.btn:hover {
+    color: #fff;
+    background-color: #66ffff;
+  }
+  
+  .pull-down-list {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 0.5;
+    display: inline-block;
+    padding: 1rem;
+    margin: 0 0 1rem 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    background-color: #00ecff;
+    border-radius: 0.5rem;
+  }
+  
+  .pull-down-list:hover {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 0.5;
+    display: inline-block;
+    padding: 1rem;
+    margin: 0 0 1rem 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    background-color: #66ffff;
+    border-radius: 0.5rem;
+  }
+  
+  .list-none {
+    display: none;
+  }
+
 }

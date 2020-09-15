@@ -4,16 +4,17 @@
     <title>NationNote</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header class="header">
-      <div class="header-bar">
-        <div class="header-logo">
-          <%= link_to image_tag("nationnote-logo.png", class:"nationnote-icon"), "/" %>
-        </div>
+      <div class="header-logo">
+        <%= link_to image_tag("nationnote-logo.png", class:"nationnote-icon"), "/" %>
+      </div>
+      <div class="user-nav-bar">
         <% if user_signed_in? %>
           <div class="user-nav">
             <%= link_to "投稿する", new_post_path, class:"btn new-post-btn" %>
