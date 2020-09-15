@@ -29,3 +29,38 @@ header {
   background: #00ffff;
   border: 0.4rem none #0090bb;
 }
+
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+  header {
+    width: 90%;
+  }
+  
+  .header-logo {
+    height: 10vh;
+    margin-left: 5rem;
+  }
+  
+  .user-nav-bar {
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .user-nav {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .btn, a.btn {
+    background-color: #00ecff;
+    border: 0.4rem none #0090bb;
+  }
+  
+  .btn:hover, a.btn:hover {
+    background: #00ffff;
+    border: 0.4rem none #0090bb;
+  }
+}
