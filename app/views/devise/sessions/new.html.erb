@@ -1,6 +1,10 @@
 <div class="container">
   <h2 class="log-in-title">ログイン</h2>
   <%= form_with model: resource, url: user_session_path, local: true do |f| %>
+    <div class='login-flash-message'>
+      <%= flash[:notice] %>
+      <%= flash[:alert] %>
+    </div>
     <div class="post-container">
       <%# メールアドレス %>
       <div class="log-in-email">

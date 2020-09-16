@@ -1,6 +1,9 @@
 <div class="container">
   <h2 class="log-in-title">新規登録</h2>
   <%= form_with model: resource, url: user_registration_path, local: true do |f| %>
+    <%# エラーメッセージを表示 %>
+    <%= render 'shared/error_messages', model: f.object %>
+    <%# エラーメッセージを表示 %>
     <div class="post-container">
       <%# ニックネーム %>
       <div class="log-in-nickname">
