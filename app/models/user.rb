@@ -4,4 +4,17 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :posts
+
+  with_options presence: true do
+
+    VALID_NICKNAME_REGEX = /\A[a-zA-Z0-9]{,20}+\z/
+    validates :nickname, format: { with: VALID_NICKNAME_REGEX }
+
+    VALID_EMAIL_REGEX = /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/
+    validates :email, format: { with: VALID_EMAIL_REGEX }
+
+    VALID_PASSWORD_REGEX = /\A(?=.*?[a-z])[a-z\d]{8,}+\z/
+    validates :password, format: { with: VALID_PASSWORD_REGEX }
+
+  end
 end
