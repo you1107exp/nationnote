@@ -35,7 +35,7 @@ html {
 
 @media (max-width: 1024px) {
   .btn, a.btn, button.btn {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
     line-height: 1.5;
     position: relative;
@@ -59,12 +59,12 @@ html {
 
 @media (max-width: 599px) {
   .btn, a.btn, button.btn {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 1.2;
     position: relative;
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.2rem;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;

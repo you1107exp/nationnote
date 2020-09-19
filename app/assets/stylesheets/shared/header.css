@@ -20,6 +20,7 @@ header {
 }
 
 .header-nav {
+  padding-top: 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -27,6 +28,7 @@ header {
 
 .user-nav {
   margin-left: 8rem;
+  word-break: keep-all;
 }
 
 .btn, a.btn {
@@ -41,10 +43,92 @@ header {
 
 /* タブレット表示時 */
 @media (max-width: 1024px) {
+  header {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
   
+  .header-bar {
+    width: 100%;
+    height: 8vh;
+    padding: 0 3vw;
+    display: flex;
+  }
+  
+  .header-logo {
+    align-items: center;
+  }
+  
+  .nationnote-icon {
+    width: 27rem;
+    height: 9rem;
+  }
+  
+  .header-nav {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .user-nav {
+    margin-left: 4rem;
+    word-break: keep-all;
+  }
+  
+  .btn, a.btn {
+    background-color: #00ecff;
+    border: 0.4rem none #0090bb;
+  }
+  
+  .btn:hover, a.btn:hover {
+    background: #00ffff;
+    border: 0.4rem none #0090bb;
+  }
 }
 
 /* スマートフォン表示時 */
 @media (max-width: 599px) {
+  header {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
   
+  .header-bar {
+    width: 100%;
+    height: 6vh;
+    padding: 0 1vw;
+    display: flex;
+  }
+  
+  .header-logo {
+    align-items: center;
+  }
+  
+  .nationnote-icon {
+    width: 18rem;
+    height: 6rem;
+  }
+  
+  .header-nav {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .user-nav {
+    margin-left: 1rem;
+    word-break: keep-all;
+  }
+  
+  .btn, a.btn {
+    background-color: #00ecff;
+    border: 0.4rem none #0090bb;
+  }
+  
+  .btn:hover, a.btn:hover {
+    background: #00ffff;
+    border: 0.4rem none #0090bb;
+  }
 }

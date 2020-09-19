@@ -19,7 +19,6 @@
 
 .content-post {
   border-top: 1px solid #f0f0f0;
-  position: relative;
   overflow: scroll;
 }
 
@@ -37,6 +36,10 @@
   text-decoration: none;
 }
 
+.sp_br {
+  display: block;
+}
+
 .foot-post {
   font-size: 1.4rem;
   margin-right: 1rem;
@@ -48,10 +51,10 @@
 }
 
 .pull-down {
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
+  display: inline-block;
   list-style: none;
+  float: right;
+  margin-right: 5rem;
 }
 
 .btn, a.btn {
@@ -112,16 +115,27 @@
 
 /* タブレット表示時 */
 @media (max-width: 1024px) {
-  /* .main {
-    width: 90%;
-    margin: 0 0 0 5rem;
-    padding-bottom: 5vh;
+  .container {
+    font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
     z-index: 1;
+  }
+  
+  .main {
+    width: 90%;
+    margin: 0 5rem;
+    padding: 0 0 1rem 1rem;
+    z-index: 2;
+    background: #fff;
+    opacity: 0.9;
   }
   
   .content-post {
     border-top: 1px solid #f0f0f0;
-    position: relative;
     overflow: scroll;
   }
   
@@ -139,8 +153,12 @@
     text-decoration: none;
   }
   
+  .sp_br {
+    display: block;
+  }
+
   .foot-post {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-right: 1rem;
     cursor: pointer;
   }
@@ -150,10 +168,10 @@
   }
   
   .pull-down {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
+    display: inline-block;
     list-style: none;
+    float: right;
+    margin-right: 5rem;
   }
   
   .btn, a.btn {
@@ -167,12 +185,12 @@
   }
   
   .pull-down-list {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 0.5;
     display: inline-block;
     padding: 1rem;
-    margin: 0 0 1rem 1rem;
+    margin-left: 1rem;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -190,12 +208,12 @@
   }
   
   .pull-down-list:hover {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 0.5;
     display: inline-block;
     padding: 1rem;
-    margin: 0 0 1rem 1rem;
+    margin-left: 1rem;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -211,25 +229,32 @@
     background-color: #66ffff;
     border-radius: 0.5rem;
   }
-  
-  .list-none {
-    display: none;
-  } */
 
 }
 
 /* スマートフォン表示時 */
 @media (max-width: 599px) {
-  /* .main {
-    width: 90%;
-    margin: 0 2.5rem;
-    padding-bottom: 5vh;
+  .container {
+    font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
     z-index: 1;
+  }
+  
+  .main {
+    width: 90%;
+    margin: 0 5rem;
+    padding: 0 0 1rem 1rem;
+    z-index: 2;
+    background: #fff;
+    opacity: 0.9;
   }
   
   .content-post {
     border-top: 1px solid #f0f0f0;
-    position: relative;
     overflow: scroll;
   }
   
@@ -247,8 +272,12 @@
     text-decoration: none;
   }
   
+  .sp_br {
+    display: block;
+  }
+  
   .foot-post {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-right: 1rem;
     cursor: pointer;
   }
@@ -258,10 +287,10 @@
   }
   
   .pull-down {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
+    display: inline-block;
     list-style: none;
+    float: right;
+    margin-right: 2rem;
   }
   
   .btn, a.btn {
@@ -280,7 +309,7 @@
     line-height: 0.5;
     display: inline-block;
     padding: 1rem;
-    margin: 0 0 1rem 1rem;
+    margin-left: 1rem;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -298,12 +327,12 @@
   }
   
   .pull-down-list:hover {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 0.5;
     display: inline-block;
     padding: 1rem;
-    margin: 0 0 1rem 1rem;
+    margin-left: 1rem;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -319,9 +348,8 @@
     background-color: #66ffff;
     border-radius: 0.5rem;
   }
-  
+
   .list-none {
     display: none;
-  } */
-
+  }
 }
