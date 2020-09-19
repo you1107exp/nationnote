@@ -1,31 +1,25 @@
 <div class="container">
   <div class="main row">
     <%# タイトルと国名 %>
-    <div class="show-top">
-      <h2 class="show-title"><%= @post.title %></h2>
-      <span class="show-sub-wrap">
-        <a class="show-sub" href="/country_posts/<%= @post.country.id %>">
-          <span class="foot-post country margin">in <%= @post.country.name %></span>
-        </a>
-      </span>
-      <span class="show-sub-wrap">
-        <a class="show-sub" href="/users/<%= @post.user.id %>">
-          <span>by <%= @post.user.nickname %></span>
-        </a>
-      </span>
+    <div class="content-post">
+      <p class="head-post"><%= @post.title %></p><br class="sp_br">
+      <a class="show-sub" href="/country_posts/<%= @post.country.id %>">
+        <span class="foot-post country margin">in <%= @post.country.name %></span>
+      </a>
+      <a class="show-sub" href="/users/<%= @post.user.id %>">
+        <span class="foot-post nickname">by <%= @post.user.nickname %></span>
+      </a>
       <% if user_signed_in? && current_user.id == @post.user_id %>
-        <ul class="position-relative">
-          <li class="pull-down">
-            <%= link_to '編集', edit_post_path(@post.id), method: :get, class:"pull-down-list" %>
-            <%= link_to '削除', post_path(@post.id), method: :delete, id:"delete-btn", class:"pull-down-list" %>
-          </li>
-        </ul>
+        <li class="pull-down">
+          <%= link_to '編集', edit_post_path(@post.id), method: :get, id:"edit-btn", class:"pull-down-list" %>
+          <%= link_to '削除', post_path(@post.id), method: :delete, id:"delete-btn", class:"pull-down-list" %>
+        </li>
       <% end %>
     </div>
     <%# タイトルと国名 %>
     <div class="show-container">
-      <div>
-        <%= image_tag @post.ref_img.variant(resize:'500x500'), class:"show-ref-img" if @post.ref_img.attached? %>
+      <div class="show-container-img">
+        <%= image_tag @post.ref_img.variant(resize:'370x370'), class:"show-ref-img" if @post.ref_img.attached? %>
       </div>
       <div class="show-container-element">
         <%= raw Rinku.auto_link(safe_join(@post.content.split("\n"),tag(:br))) %>
