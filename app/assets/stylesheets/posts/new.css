@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-width: 50rem;
+  width: 100%;
   z-index: 1;
 }
 
@@ -16,8 +16,8 @@
 
 /* 共通 */
 .post-container {
-  padding: 2vh 0;
-  width: 70rem;
+  padding: 2vh 15vw;
+  width: 80vw;
 }
 
 .indispensable {
@@ -72,7 +72,7 @@
 .post-btn {
   background: #f00;
   color: #fff;
-  width: 100%;
+  width: 80%;
   height: 5rem;
   font-size: 1.4rem;
   margin-bottom: 4vh;

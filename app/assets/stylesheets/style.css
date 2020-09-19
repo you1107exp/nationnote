@@ -7,6 +7,8 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 62.5%;
+  background: url('/images/hugh-whyte-D9TpiCPokao-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .btn, a.btn, button.btn {

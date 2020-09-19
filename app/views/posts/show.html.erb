@@ -1,39 +1,41 @@
 <div class="container">
-  <%# タイトルと国名 %>
-  <div class="show-top">
-    <h2 class="show-title"><%= @post.title %></h2>
-    <span class="show-sub-wrap">
-      <a class="show-sub" href="/country_posts/<%= @post.country.id %>">
-        <span class="foot-post country margin">in <%= @post.country.name %></span>
-      </a>
-    </span>
-    <span class="show-sub-wrap">
-      <a class="show-sub" href="/users/<%= @post.user.id %>">
-        <span>by <%= @post.user.nickname %></span>
-      </a>
-    </span>
-    <% if user_signed_in? && current_user.id == @post.user_id %>
-      <ul class="position-relative">
-        <li class="pull-down">
-          <%= link_to '編集', edit_post_path(@post.id), method: :get, class:"pull-down-list" %>
-          <%= link_to '削除', post_path(@post.id), method: :delete, id:"delete-btn", class:"pull-down-list" %>
-        </li>
-      </ul>
-    <% end %>
-  </div>
-  <%# タイトルと国名 %>
-  <div class="show-container">
-    <div>
-      <%= image_tag @post.ref_img.variant(resize:'500x500'), class:"show-ref-img" if @post.ref_img.attached? %>
+  <div class="main row">
+    <%# タイトルと国名 %>
+    <div class="show-top">
+      <h2 class="show-title"><%= @post.title %></h2>
+      <span class="show-sub-wrap">
+        <a class="show-sub" href="/country_posts/<%= @post.country.id %>">
+          <span class="foot-post country margin">in <%= @post.country.name %></span>
+        </a>
+      </span>
+      <span class="show-sub-wrap">
+        <a class="show-sub" href="/users/<%= @post.user.id %>">
+          <span>by <%= @post.user.nickname %></span>
+        </a>
+      </span>
+      <% if user_signed_in? && current_user.id == @post.user_id %>
+        <ul class="position-relative">
+          <li class="pull-down">
+            <%= link_to '編集', edit_post_path(@post.id), method: :get, class:"pull-down-list" %>
+            <%= link_to '削除', post_path(@post.id), method: :delete, id:"delete-btn", class:"pull-down-list" %>
+          </li>
+        </ul>
+      <% end %>
     </div>
-    <div class="show-container-element">
-      <%= raw Rinku.auto_link(safe_join(@post.content.split("\n"),tag(:br))) %>
+    <%# タイトルと国名 %>
+    <div class="show-container">
+      <div>
+        <%= image_tag @post.ref_img.variant(resize:'500x500'), class:"show-ref-img" if @post.ref_img.attached? %>
+      </div>
+      <div class="show-container-element">
+        <%= raw Rinku.auto_link(safe_join(@post.content.split("\n"),tag(:br))) %>
+      </div>
+      <div class="show-container-element">
+        <%= raw Rinku.auto_link(safe_join(@post.ref_url.split("\n"),tag(:br))) %>
+      </div>
     </div>
-    <div class="show-container-element">
-      <%= raw Rinku.auto_link(safe_join(@post.ref_url.split("\n"),tag(:br))) %>
+    <div class="back-to-top">
+      <a class="btn" href="/">トップページへ戻る</a>
     </div>
-  </div>
-  <div class="back-to-top">
-    <a class="btn" href="/">トップページへ戻る</a>
   </div>
 </div>

@@ -1,8 +1,20 @@
-.main {
-  width: 80vw;
-  margin: 0 0 0 10rem;
-  padding-bottom: 5vh;
+.container {
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
   z-index: 1;
+}
+
+.main {
+  width: 80%;
+  margin: 0 10rem;
+  padding: 0 0 1rem 1rem;
+  z-index: 2;
+  background: #fff;
+  opacity: 0.9;
 }
 
 .content-post {
@@ -100,7 +112,7 @@
 
 /* タブレット表示時 */
 @media (max-width: 1024px) {
-  .main {
+  /* .main {
     width: 90%;
     margin: 0 0 0 5rem;
     padding-bottom: 5vh;
@@ -202,13 +214,13 @@
   
   .list-none {
     display: none;
-  }
+  } */
 
 }
 
 /* スマートフォン表示時 */
 @media (max-width: 599px) {
-  .main {
+  /* .main {
     width: 90%;
     margin: 0 2.5rem;
     padding-bottom: 5vh;
@@ -310,6 +322,6 @@
   
   .list-none {
     display: none;
-  }
+  } */
 
 }

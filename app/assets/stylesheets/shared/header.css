@@ -1,23 +1,32 @@
 header {
-  width: 100vw;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.header-bar {
+  width: 100%;
+  height: 10vh;
+  padding: 0 10vw;
+  display: flex;
 }
 
 .header-logo {
-  height: 10vh;
-  margin-left: 10rem;
+  align-items: center;
 }
 
-.user-nav-bar {
-  height: 10vh;
+.nationnote-icon {
+  width: 30rem;
+  height: 10rem;
+}
+
+.header-nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .user-nav {
-  width: 50vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  margin-left: 8rem;
 }
 
 .btn, a.btn {
@@ -32,71 +41,10 @@ header {
 
 /* タブレット表示時 */
 @media (max-width: 1024px) {
-  header {
-    width: 90%;
-  }
   
-  .header-logo {
-    height: 10vh;
-    margin-left: 5rem;
-  }
-  
-  .user-nav-bar {
-    height: 8vh;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .user-nav {
-    width: 80vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .btn, a.btn {
-    background-color: #00ecff;
-    border: 0.4rem none #0090bb;
-  }
-  
-  .btn:hover, a.btn:hover {
-    background: #00ffff;
-    border: 0.4rem none #0090bb;
-  }
 }
 
 /* スマートフォン表示時 */
 @media (max-width: 599px) {
-  header {
-    width: 90%;
-  }
   
-  .header-logo {
-    height: 10vh;
-    margin-left: 1rem;
-  }
-  
-  .user-nav-bar {
-    width: 100vw;
-    height: 8vh;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .user-nav {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .btn, a.btn {
-    background-color: #00ecff;
-    border: 0.4rem none #0090bb;
-  }
-  
-  .btn:hover, a.btn:hover {
-    background: #00ffff;
-    border: 0.4rem none #0090bb;
-  }
 }
