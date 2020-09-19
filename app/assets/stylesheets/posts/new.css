@@ -54,6 +54,11 @@
 }
 /* 共通 */
 
+.login-flash-message {
+  text-align: center;
+  color: rgb(182, 48, 0);
+}
+
 .post-text {
   width: 100%;
   padding: 1.6rem 1.6rem 0.8rem;

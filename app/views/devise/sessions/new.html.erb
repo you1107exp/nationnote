@@ -2,7 +2,7 @@
   <div class="main row">
     <h2 class="log-in-title">ログイン</h2>
     <%= form_with model: resource, url: user_session_path, local: true do |f| %>
-      <div class='login-flash-message'>
+      <div class="login-flash-message">
         <%= flash[:notice] %>
         <%= flash[:alert] %>
       </div>

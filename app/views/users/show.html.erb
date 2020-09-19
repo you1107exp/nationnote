@@ -3,7 +3,7 @@
     <h2 class="mypage-title"><%= @nickname %>さんの投稿一覧</h2>
     <% @posts.each do |post| %>
       <div class="content-post">
-        <p class="head-post"><%= link_to post.title, post_path(post.id), method: :get, class:"content-title" %></p>
+        <p class="head-post"><%= link_to post.title, post_path(post.id), method: :get, class:"content-title" %></p><br class="sp_br">
         <a class="show-sub" href="/country_posts/<%= post.country.id %>">
           <span class="foot-post country margin">in <%= post.country.name %></span>
         </a>
