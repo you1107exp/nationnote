@@ -11,20 +11,20 @@
 
   <body>
     <header class="header">
-      <div class="header-logo">
-        <%= link_to image_tag("nationnote-logo.png", class:"nationnote-icon"), "/" %>
-      </div>
-      <div class="user-nav-bar">
+      <div class="header-bar">
+        <div class="header-logo">
+          <%= link_to image_tag("nationnote-logo.png", class:"nationnote-icon"), "/" %>
+        </div>
         <% if user_signed_in? %>
-          <div class="user-nav">
-            <%= link_to "投稿する", new_post_path, class:"btn new-post-btn" %>
-            <%= link_to current_user.nickname, "/users/#{current_user.id}", class:"btn user-btn" %>
-            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"btn user-btn" %>
+          <div class="header-nav">
+            <%= link_to "投稿する", new_post_path, class:"btn new-post-btn user-nav" %>
+            <%= link_to current_user.nickname, "/users/#{current_user.id}", class:"btn user-btn user-nav" %>
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"btn user-btn user-nav" %>
           </div>
         <% else %>
-          <div class="user-nav">
-            <%= link_to "新規登録", new_user_registration_path, class:"btn user-btn" %>
-            <%= link_to "ログイン", new_user_session_path, class:"btn user-btn" %>
+          <div class="header-nav">
+            <%= link_to "新規登録", new_user_registration_path, class:"btn user-btn user-nav" %>
+            <%= link_to "ログイン", new_user_session_path, class:"btn user-btn user-nav" %>
           </div>
         <% end %>
       </div>

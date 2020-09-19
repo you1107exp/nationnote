@@ -7,6 +7,8 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 62.5%;
+  background: url('/images/hugh-whyte-D9TpiCPokao-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .btn, a.btn, button.btn {
@@ -33,7 +35,7 @@ html {
 
 @media (max-width: 1024px) {
   .btn, a.btn, button.btn {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
     line-height: 1.5;
     position: relative;
@@ -57,12 +59,12 @@ html {
 
 @media (max-width: 599px) {
   .btn, a.btn, button.btn {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 1.2;
     position: relative;
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.2rem;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;

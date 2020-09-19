@@ -1,50 +1,52 @@
 <div class="container">
-  <h2 class="log-in-title">新規登録</h2>
-  <%= form_with model: resource, url: user_registration_path, local: true do |f| %>
-    <%# エラーメッセージを表示 %>
-    <%= render 'shared/error_messages', model: f.object %>
-    <%# エラーメッセージを表示 %>
-    <div class="post-container">
-      <%# ニックネーム %>
-      <div class="log-in-nickname">
-        <div class="weight-bold-text">
-          ニックネーム
-          <span class="indispensable">必須</span>
+  <div class="main row">
+    <h2 class="log-in-title">新規登録</h2>
+    <%= form_with model: resource, url: user_registration_path, local: true do |f| %>
+      <%# エラーメッセージを表示 %>
+      <%= render 'shared/error_messages', model: f.object %>
+      <%# エラーメッセージを表示 %>
+      <div class="post-container">
+        <%# ニックネーム %>
+        <div class="log-in-nickname">
+          <div class="weight-bold-text">
+            ニックネーム
+            <span class="indispensable">必須</span>
+          </div>
+          <%= f.text_field :nickname, class:"post-text", id:"nickname", placeholder:"半角英数字使用可 20文字まで", autofocus: true %>
         </div>
-        <%= f.text_field :nickname, class:"post-text", id:"nickname", placeholder:"半角英数字使用可 20文字まで", autofocus: true %>
-      </div>
-      <%# ニックネーム %>
-      <%# メールアドレス %>
-      <div class="log-in-email">
-        <div class="weight-bold-text">
-          メールアドレス
-          <span class="indispensable">必須</span>
+        <%# ニックネーム %>
+        <%# メールアドレス %>
+        <div class="log-in-email">
+          <div class="weight-bold-text">
+            メールアドレス
+            <span class="indispensable">必須</span>
+          </div>
+          <%= f.text_field :email, class:"post-text", id:"email", placeholder:"PCまたは携帯" %>
         </div>
-        <%= f.text_field :email, class:"post-text", id:"email", placeholder:"PCまたは携帯" %>
-      </div>
-      <%# メールアドレス %>
-      <%# パスワード %>
-      <div class="log-in-password">
-        <div class="weight-bold-text">
-          パスワード
-          <span class="indispensable">必須</span>
+        <%# メールアドレス %>
+        <%# パスワード %>
+        <div class="log-in-password">
+          <div class="weight-bold-text">
+            パスワード
+            <span class="indispensable">必須</span>
+          </div>
+          <%= f.password_field :password, class:"post-text", id:"password", placeholder:"6文字以上の半角英数字", autocomplete:"off" %>
+          <p class="info-text">※英数字両方を含めて設定してください</p>
         </div>
-        <%= f.password_field :password, class:"post-text", id:"password", placeholder:"6文字以上の半角英数字", autocomplete:"off" %>
-        <p class="info-text">※英数字両方を含めて設定してください</p>
-      </div>
-      <%# パスワード %>
-      <%# パスワード確認 %>
-      <div class="log-in-password-confirmation">
-        <div class="weight-bold-text">
-          パスワード（確認）
-          <span class="indispensable">必須</span>
+        <%# パスワード %>
+        <%# パスワード確認 %>
+        <div class="log-in-password-confirmation">
+          <div class="weight-bold-text">
+            パスワード（確認）
+            <span class="indispensable">必須</span>
+          </div>
+          <%= f.password_field :password_confirmation, class:"post-text", id:"password-confirmation", placeholder:"同じパスワードを入力", autocomplete:"off" %>
         </div>
-        <%= f.password_field :password_confirmation, class:"post-text", id:"password-confirmation", placeholder:"同じパスワードを入力", autocomplete:"off" %>
+        <%# パスワード確認 %>
       </div>
-      <%# パスワード確認 %>
-    </div>
-    <div class="post-submit">
-      <%= f.submit "新規登録", class:"post-btn" %>
-    </div>
-  <% end %>
+      <div class="post-submit">
+        <%= f.submit "新規登録", class:"post-btn" %>
+      </div>
+    <% end %>
+  </div>
 </div>

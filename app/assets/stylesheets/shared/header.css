@@ -1,23 +1,34 @@
 header {
-  width: 100vw;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.header-bar {
+  width: 100%;
+  height: 10vh;
+  padding: 0 10vw;
+  display: flex;
 }
 
 .header-logo {
-  height: 10vh;
-  margin-left: 10rem;
+  align-items: center;
 }
 
-.user-nav-bar {
-  height: 10vh;
+.nationnote-icon {
+  width: 30rem;
+  height: 10rem;
+}
+
+.header-nav {
+  padding-top: 1rem;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .user-nav {
-  width: 50vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  margin-left: 8rem;
+  word-break: keep-all;
 }
 
 .btn, a.btn {
@@ -33,25 +44,36 @@ header {
 /* タブレット表示時 */
 @media (max-width: 1024px) {
   header {
-    width: 90%;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .header-bar {
+    width: 100%;
+    height: 8vh;
+    padding: 0 3vw;
+    display: flex;
   }
   
   .header-logo {
-    height: 10vh;
-    margin-left: 5rem;
+    align-items: center;
   }
   
-  .user-nav-bar {
-    height: 8vh;
+  .nationnote-icon {
+    width: 27rem;
+    height: 9rem;
+  }
+  
+  .header-nav {
+    padding-top: 1.5rem;
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
   
   .user-nav {
-    width: 80vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    margin-left: 4rem;
+    word-break: keep-all;
   }
   
   .btn, a.btn {
@@ -68,26 +90,36 @@ header {
 /* スマートフォン表示時 */
 @media (max-width: 599px) {
   header {
-    width: 90%;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .header-bar {
+    width: 100%;
+    height: 6vh;
+    padding: 0 1vw;
+    display: flex;
   }
   
   .header-logo {
-    height: 10vh;
-    margin-left: 1rem;
+    align-items: center;
   }
   
-  .user-nav-bar {
-    width: 100vw;
-    height: 8vh;
+  .nationnote-icon {
+    width: 18rem;
+    height: 6rem;
+  }
+  
+  .header-nav {
+    padding-top: 1.5rem;
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
   
   .user-nav {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    margin-left: 1rem;
+    word-break: keep-all;
   }
   
   .btn, a.btn {

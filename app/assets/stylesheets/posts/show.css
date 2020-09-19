@@ -4,6 +4,14 @@
   justify-content: center;
 }
 
+.show-title {
+  display: inline-block;
+}
+
+.mypage-title {
+  padding-top: 2rem;
+}
+
 .show-sub-wrap {
   font-size: 1.4rem;
   margin-left: 2rem;
@@ -17,16 +25,21 @@
 }
 
 .show-container {
-  padding: 2vh 0;
-  width: 70rem;
+  padding: 2vh 15vw;
+  width: 70vw;
   text-align: center;
   line-height: 1.9;
   font-size: 1.6rem;
 }
 
-.position-relative {
+/* .position-relative {
   width: 12vw;
   position: relative;
+} */
+
+.show-container-img {
+  display: flex;
+  justify-content: center;
 }
 
 .show-container-element {

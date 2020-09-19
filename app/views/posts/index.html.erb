@@ -1,19 +1,21 @@
-<div class="main row">
-  <% @posts.each do |post| %>
-    <div class="content-post">
-      <p class="head-post"><%= link_to post.title, post_path(post.id), method: :get, class:"content-title" %></p>
-      <a class="show-sub" href="/country_posts/<%= post.country.id %>">
-        <span class="foot-post country margin">in <%= post.country.name %></span>
-      </a>
-      <a class="show-sub" href="/users/<%= post.user.id %>">
-        <span class="foot-post nickname">by <%= post.user.nickname %></span>
-      </a>
-      <% if user_signed_in? && current_user.id == post.user_id %>
-        <li class="pull-down">
-          <%= link_to '編集', edit_post_path(post.id), method: :get, class:"pull-down-list list-none" %>
-          <%= link_to '削除', post_path(post.id), method: :delete, id:"delete-btn", class:"pull-down-list list-none" %>
-        </li>
-      <% end %>
-    </div>
-  <% end %>
+<div class ="container">
+  <div class="main row">
+    <% @posts.each do |post| %>
+      <div class="content-post">
+        <p class="head-post"><%= link_to post.title, post_path(post.id), method: :get, class:"content-title" %></p><br class="sp_br">
+        <a class="show-sub" href="/country_posts/<%= post.country.id %>">
+          <span class="foot-post country margin">in <%= post.country.name %></span>
+        </a>
+        <a class="show-sub" href="/users/<%= post.user.id %>">
+          <span class="foot-post nickname">by <%= post.user.nickname %></span>
+        </a>
+        <% if user_signed_in? && current_user.id == post.user_id %>
+          <li class="pull-down">
+            <%= link_to '編集', edit_post_path(post.id), method: :get, id:"edit-btn", class:"pull-down-list list-none" %>
+            <%= link_to '削除', post_path(post.id), method: :delete, id:"delete-btn", class:"pull-down-list list-none" %>
+          </li>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
 </div>
