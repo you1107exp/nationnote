@@ -11,4 +11,12 @@ class Post < ApplicationRecord
     validates :content, length: { maximum: 1000 }
   end
   validates :country_id, numericality: { other_than: 1 }
+
+  def self.search(search)
+    if search != ""
+      Post.where('title LIKE(?)', "%#{search}%")
+    else
+      Post.includes(:user).order("created_at DESC")
+    end
+  end
 end
