@@ -59,12 +59,12 @@
 
 .btn, a.btn {
   color: #fff;
-  background-color: #00ffff;
+  background: #005fff;
 }
 
 .btn:hover, a.btn:hover {
   color: #fff;
-  background-color: #66ffff;
+  background: #5d99ff;
 }
 
 .pull-down-list {
@@ -86,7 +86,7 @@
   text-decoration: none;
   letter-spacing: 0.1rem;
   color: #fff;
-  background-color: #00ecff;
+  background-color: #005fff;
   border-radius: 0.5rem;
 }
 
@@ -109,7 +109,7 @@
   text-decoration: none;
   letter-spacing: 0.1rem;
   color: #fff;
-  background-color: #66ffff;
+  background: #5d99ff;
   border-radius: 0.5rem;
 }
 
@@ -176,12 +176,12 @@
   
   .btn, a.btn {
     color: #fff;
-    background-color: #00ffff;
+    background: #005fff;
   }
   
   .btn:hover, a.btn:hover {
     color: #fff;
-    background-color: #66ffff;
+    background: #5d99ff;
   }
   
   .pull-down-list {
@@ -203,7 +203,7 @@
     text-decoration: none;
     letter-spacing: 0.1rem;
     color: #fff;
-    background-color: #00ecff;
+    background: #005fff;
     border-radius: 0.5rem;
   }
   
@@ -226,7 +226,7 @@
     text-decoration: none;
     letter-spacing: 0.1rem;
     color: #fff;
-    background-color: #66ffff;
+    background: #5d99ff;
     border-radius: 0.5rem;
   }
 
@@ -295,12 +295,12 @@
   
   .btn, a.btn {
     color: #fff;
-    background-color: #00ffff;
+    background: #005fff;
   }
   
   .btn:hover, a.btn:hover {
     color: #fff;
-    background-color: #66ffff;
+    background: #5d99ff;
   }
   
   .pull-down-list {
@@ -322,7 +322,7 @@
     text-decoration: none;
     letter-spacing: 0.1rem;
     color: #fff;
-    background-color: #00ecff;
+    background: #005fff;
     border-radius: 0.5rem;
   }
   
@@ -345,7 +345,7 @@
     text-decoration: none;
     letter-spacing: 0.1rem;
     color: #fff;
-    background-color: #66ffff;
+    background: #5d99ff;
     border-radius: 0.5rem;
   }
 

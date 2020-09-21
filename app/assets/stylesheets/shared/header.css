@@ -32,15 +32,37 @@ header {
 }
 
 .btn, a.btn {
-  background-color: #00ecff;
-  border: 0.4rem none #0090bb;
+  background: #005fff;
+  border: 0.4rem none;
 }
 
 .btn:hover, a.btn:hover {
-  background: #00ffff;
-  border: 0.4rem none #0090bb;
+  background: #5d99ff;
+  border: 0.4rem none;
 }
 
+.search-bar {
+  width: 100vw;
+  height: 8vh;
+}
+
+.search-form {
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  width: 40rem;
+  height: 6vh;
+  margin-top: 5vh;
+}
+
+.search-btn {
+  margin-top: 5vh;
+}
 /* タブレット表示時 */
 @media (max-width: 1024px) {
   header {
@@ -77,13 +99,13 @@ header {
   }
   
   .btn, a.btn {
-    background-color: #00ecff;
-    border: 0.4rem none #0090bb;
+    background: #005fff;
+    border: 0.4rem none;
   }
   
   .btn:hover, a.btn:hover {
-    background: #00ffff;
-    border: 0.4rem none #0090bb;
+    background: #5d99ff;
+    border: 0.4rem none;
   }
 }
 
@@ -123,12 +145,12 @@ header {
   }
   
   .btn, a.btn {
-    background-color: #00ecff;
-    border: 0.4rem none #0090bb;
+    background:	#005fff;
+    border: 0.4rem none;
   }
   
   .btn:hover, a.btn:hover {
-    background: #00ffff;
-    border: 0.4rem none #0090bb;
+    background: #5d99ff;
+    border: 0.4rem none;
   }
 }
