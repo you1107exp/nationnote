@@ -17,4 +17,11 @@ class User < ApplicationRecord
     validates :password, format: { with: VALID_PASSWORD_REGEX }, length: { minimum: 6 }
 
   end
+
+  def self.guest
+    find_or_create_by!(email: 'guest@example.com') do |user|
+      user.nickname = "guest"
+      user.password = SecureRandom.alphanumeric(10)
+    end
+  end
 end
