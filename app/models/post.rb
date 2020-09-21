@@ -14,7 +14,7 @@ class Post < ApplicationRecord
 
   def self.search(search)
     if search != ""
-      Post.where('text LIKE(?)', "%#{search}%")
+      Post.where('title LIKE(?)', "%#{search}%")
     else
       Post.includes(:user).order("created_at DESC")
     end
