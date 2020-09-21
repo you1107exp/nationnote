@@ -113,6 +113,29 @@
   border-radius: 0.5rem;
 }
 
+.search-bar {
+  width: 100vw;
+  height: 8vh;
+}
+
+.search-form {
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  width: 40rem;
+  height: 6vh;
+  margin-top: 2vh;
+}
+
+.search-btn {
+  margin-top: 2vh;
+}
+
 /* タブレット表示時 */
 @media (max-width: 1024px) {
   .container {

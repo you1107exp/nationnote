@@ -41,28 +41,6 @@ header {
   border: 0.4rem none;
 }
 
-.search-bar {
-  width: 100vw;
-  height: 8vh;
-}
-
-.search-form {
-  width: 100vw;
-  height: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.search-input {
-  width: 40rem;
-  height: 6vh;
-  margin-top: 5vh;
-}
-
-.search-btn {
-  margin-top: 5vh;
-}
 /* タブレット表示時 */
 @media (max-width: 1024px) {
   header {

@@ -29,12 +29,6 @@
           </div>
         <% end %>
       </div>
-      <div class="search-bar">
-        <%= form_with(url: search_posts_path, local: true, method: :get, class:"search-form") do |f| %>
-          <%= f.text_field :keyword, placeholder: "投稿を検索", class:"search-input" %>
-          <%= f.submit "検索", class:"btn search-btn" %>
-        <% end %>
-      </div>
     </header>
     <%= yield %>
     <footer class="footer">
